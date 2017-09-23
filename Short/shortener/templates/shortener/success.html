@@ -1,0 +1,30 @@
+{#{% extends 'base.html' %}#}
+{#{% block title %}#}
+{#{{ object.shortcode }}#}
+{#{% endblock title %}#}
+{##}
+{#{% block content %}#}
+{#<h1>Success</h1>#}
+{#<p>{{ object.url }}</p>#}
+{#<p>#}
+{#    <a href="{{ object.get_absolute_url }}" target="_blank">{{ object.get_absolute_url  }}</a>#}
+{#</p>#}
+{#<p>{{ object.click.count }}</p>#}
+{#{% endblock content %}#}
+
+{% extends "base.html" %}
+
+{% block title %}
+{{ object.shortcode }}
+{% endblock title %}
+
+{% block content %}
+<div class=''>
+    <h1>Success!</h1>
+
+    <p>{{ object.url }}</p>
+
+    <p><a class='btn btn-link' href='{{ object.get_absolute_url }}' target="_blank">{{ object.get_absolute_url }}</a></p>
+    <a class='btn btn-default'  href='/'>+ New</a>
+</div>
+{% endblock content %}

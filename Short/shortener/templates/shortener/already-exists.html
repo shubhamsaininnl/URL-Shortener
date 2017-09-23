@@ -1,0 +1,26 @@
+{#<h1>Exists!</h1>#}
+{##}
+{#<p>{{ object.url }}</p>#}
+{#<p>#}
+{#    <a href="{{ object.get_absolute_url }}" target="_blank">{{ object.get_absolute_url  }}</a>#}
+{#</p>#}
+{#<p>{{ object.click.count }}</p>#}
+{#<p>{{ object.get_absolute_url }}</p>#}
+
+{% extends "base.html" %}
+
+{% block title %}
+{{ object.shortcode }}
+{% endblock title %}
+
+{% block content %}
+<div class=''>
+    <h1>Exists Already</h1>
+    <p>{{ object.url }}</p>
+    {% if object.click.count %}
+        <p>Count: {{ object.click.count }}</p>
+    {% endif %}
+    <p><a class='btn btn-link'  href='{{ object.get_absolute_url }}' target="_blank">{{ object.get_absolute_url }}</a></p>
+    <a class='btn btn-default' href='/shortener/'>+ New</a>
+</div>
+{% endblock content %}
