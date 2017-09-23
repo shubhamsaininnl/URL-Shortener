@@ -1,2 +1,2 @@
 # URL-Shortener
-URL Shortening Django based web app.
+Django based URL Shortening web app.
