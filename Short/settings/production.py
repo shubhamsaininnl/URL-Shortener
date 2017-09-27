@@ -25,7 +25,7 @@ SECRET_KEY = '*=-o+6_5&55*t#=_nzskgl&2@19$ercir_%=d^3usdi)jvcbv*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['yashanshu.com', 'blog.yashanshu.com', 'www.yashanshu.com', '127.0.0.1']
+ALLOWED_HOSTS = ['http://floraison.herokuapp.com/','yashanshu.com', 'blog.yashanshu.com', 'www.yashanshu.com', '127.0.0.1']
 
 
 # Application definition
