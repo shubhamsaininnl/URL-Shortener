@@ -11,7 +11,7 @@ class HomeView(View):
 
     def get(self, request, *args, **kwargs):
         form = SubmitUrlForm()
-        bg_image = "http://geodavephotography.com/images/orchid-images/38018270-orchid-images.jpg"
+        bg_image = "https://cdn.wallpapersafari.com/99/48/qyuSTK.jpg"
         context = {
             "title": "Submit URL Form",
             "form": form,
