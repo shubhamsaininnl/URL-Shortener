@@ -25,7 +25,7 @@ SECRET_KEY = '*=-o+6_5&55*t#=_nzskgl&2@19$ercir_%=d^3usdi)jvcbv*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['http://floraison.herokuapp.com/','yashanshu.com', 'blog.yashanshu.com', 'www.yashanshu.com', '127.0.0.1']
+ALLOWED_HOSTS = ['http://floraison.herokuapp.com/','yzu-uzy.tech', 'blog.yzu-uzy.tech', 'www.yzu-uzy.tech']
 
 
 # Application definition
@@ -60,8 +60,8 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'Short.urls'
 ROOT_HOSTCONF = 'Short.hosts'
 DEFAULT_HOST = 'www'
-DEFAULT_REDIRECT_URL = "http://www.yashanshu.com"
-PARENT_HOST = "yashanshu.com:8000"
+DEFAULT_REDIRECT_URL = "http://www.yzu-uzy.tech"
+PARENT_HOST = "yzu-uzy.tech"
 
 TEMPLATES = [
     {
