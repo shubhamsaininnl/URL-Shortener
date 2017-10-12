@@ -8,6 +8,9 @@ from .forms import SubmitUrlForm
 # Create your views here.
 
 class HomeView(View):
+    """
+    intial docstring.
+    """
 
     def get(self, request, *args, **kwargs):
         form = SubmitUrlForm()
